@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:orientation="horizontal" 
+            android:layout_marginLeft="0px"
+            android:layout_marginRight="0px"
+            android:layout_marginTop="0px"
+            android:layout_weight="2" 
+            >
+    
+        <com.androidplot.xy.XYPlot
+            android:id="@+id/dynamicPlot"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px" 
+            android:layout_weight="1"
+            />
+
+        
+		</LinearLayout>
+		
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:orientation="horizontal" 
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px"
+            android:layout_weight="6" 
+            >
+            
+            <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Enable Bluetooth"
+            android:id="@+id/enableBluetooth"
+            android:enabled="true"
+            android:layout_weight="1" />
+            
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" 
+	            android:orientation="vertical" 
+	            android:layout_marginLeft="0px"
+	            android:layout_marginRight="0px"
+	            android:layout_marginTop="0px"
+	            android:layout_weight="1" 
+	            >
+	            
+	            <Button
+	                android:id="@+id/scan"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:text="Scan"
+	            	android:layout_weight="1"
+		            android:layout_gravity="center_horizontal"
+		            android:enabled="false" />
+	                />
+	            
+	            <Button
+	                android:id="@+id/connect"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:text="Connect"
+	            	android:layout_weight="1"            
+	            	android:layout_gravity="center_horizontal"
+            		android:enabled="false"
+	                />
+	            
+	      	</LinearLayout>
+	      	            
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" 
+	            android:orientation="vertical" 
+	            android:layout_marginLeft="0px"
+	            android:layout_marginRight="0px"
+	            android:layout_marginTop="0px"
+	            android:layout_weight="1" 
+	            >
+	            
+	            <Button
+	                android:id="@+id/start"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:text="Start"
+	            	android:layout_weight="1"
+	                />
+	            
+	            <Button
+	                android:id="@+id/stop"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:text="Stop"
+	            	android:layout_weight="1"
+	                />
+	      	</LinearLayout>
+	      	
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" 
+	            android:orientation="vertical" 
+	            android:layout_marginLeft="0px"
+	            android:layout_marginRight="0px"
+	            android:layout_marginTop="0px"
+	            android:layout_weight="1" 
+	            >
+	            
+			        <TextView
+			            android:layout_width="fill_parent"
+			            android:layout_height="fill_parent"
+			            android:id="@+id/scanStatus"
+			            android:layout_weight="1" />
+			        
+			        <TextView
+			            android:layout_width="fill_parent"
+			            android:layout_height="fill_parent"
+			            android:id="@+id/deviceInfo"
+			            android:layout_weight="1" />
+			        
+			        <TextView
+			            android:layout_width="fill_parent"
+			            android:layout_height="fill_parent"
+			            android:id="@+id/connectionStatus"
+			            android:layout_weight="1" />
+			        	            	            
+	      	</LinearLayout>            
+        </LinearLayout>
+</LinearLayout>
